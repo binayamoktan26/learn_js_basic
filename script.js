@@ -128,8 +128,8 @@
 // Replace, contact , trim
 // toUpperCase , toLowerCase
 // charAt , [] ,split
-const str = '  Hey this is nawang "tashi lama" , I live in Manthali ';
-console.log(str);
+// const str = '  Hey this is nawang "tashi lama" , I live in Manthali ';
+// console.log(str);
 // const val = str.toLowerCase();
 // const val = str.toUpperCase();
 // const val = str[5];
@@ -146,5 +146,64 @@ console.log(str);
 // const val = str.split("i").join("i");
 
 // const val = str.concat("Hello world ", "I love JavaScript");
-const val = str + "hello world";
-console.log(val);
+// const val = str + "hello world";
+// console.log(val);
+
+// JS - CONDITIONAL STATEMENTS
+
+//truthy: true , 2 , -3, " ","hello world" , {}, [] , ()=>{}
+//falsy : false , ,0 ,NaN, null , undefined
+
+// 1 If
+// 2 If else
+// 3 Else if
+// 4 Switch
+
+// 1 If
+// const val = !!"hello world";
+// console.log(val);
+
+// const age = 25;
+
+// if (age >= 18 && age < 50) {
+//   console.log("welcome to coding party ");
+// }
+
+//If else
+// const age = 12;
+// const vip = false;
+// if ((age >= 18 && age <= 60) || vip === true) {
+//   console.log("welcome to the party");
+// } else {
+//   console.log("no entry");
+// }
+
+//Else if condition
+// const pet = "goat";
+
+// if (pet === "cat") {
+//   console.log("meow");
+// } else if (pet === "dog") {
+//   console.log("woff");
+// } else if (pet === "goat") {
+//   console.log("mya mya");
+// } else {
+//   console.log(" fje jek kjd jks kdks");
+// }
+
+// 4. Switch
+
+const pet = "goat";
+switch (pet) {
+  case "cat ":
+    console.log("meow");
+    break;
+  case "dog":
+    console.log("howu howu");
+    break;
+  case "goat":
+    console.log("mya mya");
+    break;
+  default:
+    console.log("hfk hfksal flkf");
+}
