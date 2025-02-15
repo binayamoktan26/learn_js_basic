@@ -149,11 +149,28 @@
 // const val = str + "hello world";
 // console.log(val);
 
-// JS - CONDITIONAL STATEMENTS
+//LOGICAL OPERATOR
+
+//&&  , || , Ternary
+
+//&&
+// const age = 35;
+// age < 45 && console.log("hello world ");
+
+//   ||
+// const age = 33;
+// const val = age  "N/A";
+// console.log(val);
+
+//Ternary
+//condition1 ? // statement1 : // statement 2
+// const age = 23;
+// age < 30 ? console.log("hey") : console.log("bye");
 
 //truthy: true , 2 , -3, " ","hello world" , {}, [] , ()=>{}
 //falsy : false , ,0 ,NaN, null , undefined
 
+// JS - CONDITIONAL STATEMENTS
 // 1 If
 // 2 If else
 // 3 Else if
@@ -193,17 +210,58 @@
 
 // 4. Switch
 
-const pet = "goat";
-switch (pet) {
-  case "cat ":
-    console.log("meow");
-    break;
-  case "dog":
-    console.log("howu howu");
-    break;
-  case "goat":
-    console.log("mya mya");
-    break;
-  default:
-    console.log("hfk hfksal flkf");
-}
+// const pet = "goat";
+// switch (pet) {
+//   case "cat ":
+//     console.log("meow");
+//     break;
+//   case "dog":
+//     console.log("howu howu");
+//     break;
+//   case "goat":
+//     console.log("mya mya");
+//     break;
+//   default:
+//     console.log("hfk hfksal flkf");
+// }
+
+// what is array and how is array in JS ?
+
+// Array []
+// const val = ["nawang ", 26, "hello world ", null, undefined];
+// console.log(val);
+// Length , pish, pop, shift, unshift ,toString, join ,[ ], splice, slice, indexOf
+// Short, reverse
+// forEach, map
+// Filter ,reduce ,every, find
+
+//array
+const fruits = ["apple", "mango", "orange", "banana"];
+// const value = fruits.length;
+// const value = fruits[2];
+//adding data
+//in last using push
+// fruits.push("grapes");
+// in first using unshift
+// fruits.unshift("grapes");
+// to add between first and last we use splice
+// fruits.splice(2, 0, "grapes");
+//DELETING THE ITEMS FROM THE ARRAY
+//POP
+//it is used to delet data from the last in array
+// const val = fruits.pop();
+//Shift
+// it is used to delet a item from the begining in array
+// const val = fruits.shift();
+// const val = fruits.splice(2, 2);// delet the items from the array
+// fruits[3] = "loving";
+// const val = fruits.slice(1, 3); // it  make a another array between 1 to 3 excluding 1 and 3
+
+// const val = fruits.toString(); to convert array to string
+// const val = fruits.split(",");
+// const val = fruits.indexOf("mango");
+// const val = fruits.includes("kdfgjka");
+// const val = fruits.join(" //");
+// console.log(fruits.sort());
+fruits.reverse();
+console.log(fruits);
