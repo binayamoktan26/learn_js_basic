@@ -236,11 +236,11 @@
 // Filter ,reduce ,every, find
 
 //array
-const fruits = ["apple", "mango", "orange", "banana"];
+// const fruits = ["apple", "mango", "orange", "banana"];
 // const value = fruits.length;
 // const value = fruits[2];
 //adding data
-//in last using push
+//in last using push                                                          .
 // fruits.push("grapes");
 // in first using unshift
 // fruits.unshift("grapes");
@@ -263,5 +263,79 @@ const fruits = ["apple", "mango", "orange", "banana"];
 // const val = fruits.includes("kdfgjka");
 // const val = fruits.join(" //");
 // console.log(fruits.sort());
-fruits.reverse();
-console.log(fruits);
+// fruits.reverse();
+// console.log(fruits);
+
+// Loop
+// for (let i = 1; i < 4; i++) {
+//   console.log(i);
+// }
+//while loop
+
+// let i = 1;
+// while (i <= 6) {
+//   console.log(i);
+//   i++;
+// }
+
+// Do while loop () do
+// let i = 1;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 10);
+
+// continue
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i % 2 === 0) continue;
+//   else;
+//   console.log(i);
+// }
+
+// JS specific loop
+//for /of for (x of cars ) for array
+
+// const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+// const upperFruites = [];
+// for (let items of fruits) {
+//   upperFruites.push(items.toUpperCase());
+// }
+// console.log(upperFruites);
+
+// for in loop
+
+//forEach
+// const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+// const newData = fruits.forEach((fruit, index) => {
+//   console.log(index, fruit);
+// });
+// console.log(newData);
+
+//map()
+// let arr = [1, 2, 4, 74, 8, 7];
+// let newArr = arr.map((val, index) => {
+//   console.log(val);
+//   return "hello world";
+// });
+// console.log(newArr);
+
+//filter()
+// let arr = ["red", "yellow", "blue", "green", "black", "white"];
+// let newArr = arr.filter((value, index) => {
+//   if (value.includes("n")) return true;
+//   else return false;
+// });
+// console.log(newArr);
+
+//another method
+// const newArr = arr.filter((value, index) => value.includes("b"));
+// console.log(newArr);
+
+// reduce ()
+const money = [100, 200, 300, 400, 500];
+const total = money.reduce((acc, curr) => {
+  return acc + curr;
+}, 20);
+console.log(total);
