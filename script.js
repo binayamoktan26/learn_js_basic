@@ -313,7 +313,7 @@
 // });
 // console.log(newData);
 
-//map()
+// map()
 // let arr = [1, 2, 4, 74, 8, 7];
 // let newArr = arr.map((val, index) => {
 //   console.log(val);
@@ -321,7 +321,7 @@
 // });
 // console.log(newArr);
 
-//filter()
+// filter()
 // let arr = ["red", "yellow", "blue", "green", "black", "white"];
 // let newArr = arr.filter((value, index) => {
 //   if (value.includes("n")) return true;
@@ -329,13 +329,43 @@
 // });
 // console.log(newArr);
 
-//another method
+// another method
 // const newArr = arr.filter((value, index) => value.includes("b"));
 // console.log(newArr);
 
 // reduce ()
-const money = [100, 200, 300, 400, 500];
-const total = money.reduce((acc, curr) => {
-  return acc + curr;
-}, 20);
-console.log(total);
+// const money = [100, 200, 300, 400, 500];
+// const total = money.reduce((acc, curr) => {
+//   return acc + curr;
+// }, 20);
+// console.log(total);
+
+//every()
+
+// let arr = ["red", "yellow", "blue", "green", "black", "white"];
+// let newArr = arr.every((value) => {
+//   console.log(value);
+//   return arr.includes("blue"); //test condition
+// });
+// console.log(newArr);
+
+//Includes (()) boolean tue or false
+// let arr = ["red", "yellow", "blue", "green", "black", "white"];
+// let newArr = arr.includes("blue");
+// console.log(newArr);
+
+//find()
+// let arr = ["red", "yellow", "blue", "green", "black", "white"];
+// let check = arr.find((value) => {
+//   return value === "blue";
+// });
+// console.log(check);
+
+// indexof
+
+// let arr = ["red", "yellow", "blue", "green", "black", "white"];
+// let placeHolder = arr.indexOf("black");
+// console.log(placeHolder);
+
+let loveArr = new String(50).fill("I love JavaScript❤️");
+console.log(loveArr);
