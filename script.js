@@ -340,7 +340,7 @@
 // }, 20);
 // console.log(total);
 
-//every()
+// every()
 
 // let arr = ["red", "yellow", "blue", "green", "black", "white"];
 // let newArr = arr.every((value) => {
@@ -349,12 +349,12 @@
 // });
 // console.log(newArr);
 
-//Includes (()) boolean tue or false
+// Includes (()) boolean tue or false
 // let arr = ["red", "yellow", "blue", "green", "black", "white"];
 // let newArr = arr.includes("blue");
 // console.log(newArr);
 
-//find()
+// find()
 // let arr = ["red", "yellow", "blue", "green", "black", "white"];
 // let check = arr.find((value) => {
 //   return value === "blue";
@@ -367,5 +367,45 @@
 // let placeHolder = arr.indexOf("black");
 // console.log(placeHolder);
 
-let loveArr = new String(50).fill("I love JavaScript❤️");
-console.log(loveArr);
+// let loveArr = new String(50).fill("I love JavaScript❤️");
+// console.log(loveArr);
+
+// Challange #1
+// 1. create an array of 50 random numbers range between 1 and 100 programmatically
+// const ranNum = [];
+// for (i = 0; i < 50; i++) {
+// const num = Math.floor(Math.random() * 100) + 1; //1--.99
+// ranNum.push(num);
+// ranNum[i] = num;
+// }
+// console.log(ranNum);
+//2. sort the array in descending order
+
+// ranNum.sort((a, b) => b - a);
+// console.log(ranNum);
+
+//3. get total of the array
+
+// const total = ranNum.reduce((acc, curr) => {
+//   return acc + curr;
+// }, 0);
+// console.log(total);
+
+//4.Divide original array in to 2 new arrays that contains even or odd numbers only each.
+// const evenNum = ranNum.filter((value) => value % 2 === 0);
+// const oddNum = ranNum.filter((value) => value % 2 !== 0);
+// console.log(evenNum, oddNum);
+// 5. remove duplicate number for the original array
+// const newNum = [...new Set(ranNum)];
+// console.log(newNum);
+// Challange #2 create unique array 50 numbers rang between 1 and 100 programmatically
+
+let uniqueNum = [];
+for (i = 0; uniqueNum.length < 50; i++) {
+  const num = Math.floor(Math.random() * 100) + 1;
+  if (!uniqueNum.includes(num)) {
+    uniqueNum.push(num);
+  }
+  console.log(i);
+}
+console.log(uniqueNum);
