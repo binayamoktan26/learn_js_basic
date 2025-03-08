@@ -400,12 +400,40 @@
 // console.log(newNum);
 // Challange #2 create unique array 50 numbers rang between 1 and 100 programmatically
 
-let uniqueNum = [];
-for (i = 0; uniqueNum.length < 50; i++) {
-  const num = Math.floor(Math.random() * 100) + 1;
-  if (!uniqueNum.includes(num)) {
-    uniqueNum.push(num);
-  }
-  console.log(i);
-}
-console.log(uniqueNum);
+// let uniqueNum = [];
+// for (i = 0; uniqueNum.length < 50; i++) {
+//   const num = Math.floor(Math.random() * 100) + 1;
+//   if (!uniqueNum.includes(num)) {
+//     uniqueNum.push(num);
+//   }
+//   console.log(i);
+// }
+// console.log(uniqueNum);
+
+// Data type Object
+
+const person = {
+  name: "Binaya Moktan",
+  number: 123456789,
+  age: 25,
+  occupation: "Software Engineer",
+  address: "manthali",
+  isMarried: false,
+  skill: ["javascript", "react", "node", ["java", "python"]],
+  gender: null,
+  parents: {
+    f: "minato",
+    m: "kushina",
+  },
+
+  bio: () => {
+    return "hello , Here me Nawang Tashi Lama";
+  },
+};
+//shallow copy of object
+// const data = person.skill[3][1];
+// const data = person["gender"];
+// const data = person.parents.m;
+const data = person.bio();
+console.log(person);
+console.log(data);
