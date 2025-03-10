@@ -434,6 +434,11 @@ const person = {
 // const data = person.skill[3][1];
 // const data = person["gender"];
 // const data = person.parents.m;
-const data = person.bio();
+// const data = person.bio();
+// person.name = "Jiraya ";
+// person.company = "dell";
+// persons.parents.b = "itachi";
+// person.skill.push("C++");
+person.skill[3].push("C#");
 console.log(person);
-console.log(data);
+// console.log(data);
