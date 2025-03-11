@@ -431,6 +431,7 @@ const person = {
   },
 };
 //shallow copy of object
+//Read dat
 // const data = person.skill[3][1];
 // const data = person["gender"];
 // const data = person.parents.m;
@@ -438,7 +439,28 @@ const person = {
 // person.name = "Jiraya ";
 // person.company = "dell";
 // persons.parents.b = "itachi";
+
+//Update Data
 // person.skill.push("C++");
-person.skill[3].push("C#");
-console.log(person);
+// person.skill[3].push("C#");
+
 // console.log(data);
+
+//deleting the properties of object
+
+// person.address = undefined;
+// delete person.age;
+// person.skill[3].pop();
+
+// console.log(person);
+
+//Destructuring : const {name}:obj
+
+const {
+  name,
+  age,
+  occupation,
+  bio,
+  parents: { f },
+} = person;
+console.log(name, age, bio(), f);
