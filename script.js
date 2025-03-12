@@ -456,11 +456,18 @@ const person = {
 
 //Destructuring : const {name}:obj
 
-const {
-  name,
-  age,
-  occupation,
-  bio,
-  parents: { f },
-} = person;
-console.log(name, age, bio(), f);
+// const {
+//   name,
+//   age,
+//   occupation,
+//   bio,
+//   parents: { f },
+// } = person;
+// console.log(name, age, bio(), f);
+//default
+
+// person.room = "undefined";
+// const { name, age, occupation, room = " N / A" } = person; // N/A = Not avaible
+// console.log(name, age, room);
+
+// ES6 Rest Operator
