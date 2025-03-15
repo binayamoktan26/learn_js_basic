@@ -430,8 +430,8 @@ const person = {
     return "hello , Here me Nawang Tashi Lama";
   },
 };
-//shallow copy of object
-//Read dat
+// shallow copy of object
+// Read data
 // const data = person.skill[3][1];
 // const data = person["gender"];
 // const data = person.parents.m;
@@ -440,13 +440,13 @@ const person = {
 // person.company = "dell";
 // persons.parents.b = "itachi";
 
-//Update Data
+// Update Data
 // person.skill.push("C++");
 // person.skill[3].push("C#");
 
 // console.log(data);
 
-//deleting the properties of object
+// deleting the properties of object
 
 // person.address = undefined;
 // delete person.age;
@@ -454,7 +454,7 @@ const person = {
 
 // console.log(person);
 
-//Destructuring : const {name}:obj
+// Destructuring : const {name}:obj
 
 // const {
 //   name,
@@ -464,10 +464,37 @@ const person = {
 //   parents: { f },
 // } = person;
 // console.log(name, age, bio(), f);
-//default
+// default
 
 // person.room = "undefined";
 // const { name, age, occupation, room = " N / A" } = person; // N/A = Not avaible
 // console.log(name, age, room);
 
 // ES6 Rest Operator
+
+// const { name, age, occupation, ...restOfTheProperties } = person;
+// console.log(restOfTheProperties);
+
+// spread
+
+// const career = {
+//   title: "web develoer",
+//   salary: "45000",
+// };
+// const combo = { ...person, ...career };
+// console.log(combo);
+
+// copying data :  shallow copy and deep copy
+
+// const p1 = person;
+
+// const p1 = Object.assign({}, person);
+// p1.name = "nawang tashi lama";
+// shallow copy
+// console.log(p1);
+// console.log(person);
+
+// const p1 = JSON.stringify(person);
+// console.log(p1);
+
+//loop through object
