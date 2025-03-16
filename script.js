@@ -498,3 +498,15 @@ const person = {
 // console.log(p1);
 
 //loop through object
+// for (let key in person) {
+//   console.log(key);
+//   console.log(key, person[key]);
+
+//
+// const personArg = Object.entries(person);
+//convert all the key value pair into array
+// const personArg = Object.keys(person);
+// all the key of the object convert into array
+const personArg = Object.values(person);
+// all the value of the object convert into array
+console.log(personArg);
