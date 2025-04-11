@@ -507,6 +507,41 @@ const person = {
 //convert all the key value pair into array
 // const personArg = Object.keys(person);
 // all the key of the object convert into array
-const personArg = Object.values(person);
+// const personArg = Object.values(person);
 // all the value of the object convert into array
-console.log(personArg);
+// console.log(personArg);
+
+//Date()Object
+/*formate
+get method
+set method
+*/
+
+// const today = new Date();
+// const today = Date.now();
+// let data = today.getDay();
+// console.log(data);
+// let myDate = new Date();
+// console.log(myDate.toString());
+// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleString());
+
+// let myCreatedDate = new Date(2023, 0, 23);
+// console.log(myCreatedDate.toDateString());
+
+// let myDate = new Date("2025-02-11");
+
+// let myDate = new Date("02-12-2025");
+// console.log(myDate.toDateString());
+
+// let myTimeStamp = Date.now();
+// console.log(myTimeStamp);
+// console.log(myDate.getTime());
+// console.log(Math.round(Date.now() / 1000));
+
+// let newDate = new Date();
+// console.log(newDate);
+// console.log(newDate.getMonth() + 1);
+// console.log(newDate.getDay());
+
+// newDate.toLocaleString(`default`, { weekday: "short" });
