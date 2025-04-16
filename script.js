@@ -545,3 +545,45 @@ set method
 // console.log(newDate.getDay());
 
 // newDate.toLocaleString(`default`, { weekday: "short" });
+
+// date challenge #1 : create a function that takes food s and the expire data and returns one of the following
+//1. if expired: AB is expired 4 days ago
+//2. if not expireed : you have 10 days to use this product .
+
+//  const checkExp= ()=>{
+//return `AB is expired 4 days ago`;
+//return `you have 10 days to use this product`;
+//  }
+
+//  cosnt foods =[
+//   {
+//     name : "tuna",
+//     exp: "2023-10-20",
+
+//   },
+
+//   {
+//     name : "Milk",
+//     exp: "2023-10-25",
+
+//   }
+
+//  ];
+//  food.map((food)=> {
+//   console.log(food,i);)
+
+//Function introduction
+// function sayHi() {
+// const str = "hello world";
+// console.log(str);
+//   const str = `hello world   ${"nawang tashi lama"}`;
+//   console.log(str);
+// }
+
+// sayHi();
+//Es6 function
+const fun = () => {
+  const str = "hello world ";
+  console.log(str);
+};
+fun();
