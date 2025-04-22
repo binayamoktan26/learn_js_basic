@@ -582,8 +582,58 @@ set method
 
 // sayHi();
 //Es6 function
-const fun = () => {
-  const str = "hello world ";
-  console.log(str);
+// const fun = () => {
+//   const str = "hello world ";
+//   console.log(str);
+// };
+// fun();
+
+//function in use
+
+// const binayaBio = "binaya from manthali , 25 years old";
+// const nawangBio = "nawang from Kathmandu , 22 years old and likes to hacking";
+// const tashiBio = "tashi from Pokhara , 28 years old and likes to coding";
+// console.log(binayaBio, nawangBio, tashiBio);
+
+const userList = [
+  {
+    name: "binaya Moktan",
+    address: "manthali",
+    age: 25,
+    hobbies: ["coding", "hacking"],
+  },
+  {
+    name: "nawang Lama",
+    address: "Kathmandu",
+    age: 22,
+    hobbies: ["coding", "networking"],
+  },
+  {
+    name: "tashi lama",
+    address: "Pokhara",
+    age: 28,
+    hobbies: "coding",
+  },
+];
+console.log(userList);
+const personalBio = ({ name, address }) => {
+  // const { name, address } = person;
+  console.log(person);
+  const str = `${name} from ${address} ,24 years old and likes to coding`;
+  return str;
 };
-fun();
+
+// const data = personBio();
+// console.log(userList);
+
+userList.forEach((item) => {
+  console.log(personalBio(item));
+});
+
+// const num1 = [1, 2, 3, 4, 5];
+// const num2 = [9, 10];
+// const combined = [...num1, ...num2];
+
+// console.log(combined);
+const num1 = [1, 2, 3, 4, 5];
+const num2 = [9, 10];
