@@ -595,45 +595,74 @@ set method
 // const tashiBio = "tashi from Pokhara , 28 years old and likes to coding";
 // console.log(binayaBio, nawangBio, tashiBio);
 
-const userList = [
-  {
-    name: "binaya Moktan",
-    address: "manthali",
-    age: 25,
-    hobbies: ["coding", "hacking"],
-  },
-  {
-    name: "nawang Lama",
-    address: "Kathmandu",
-    age: 22,
-    hobbies: ["coding", "networking"],
-  },
-  {
-    name: "tashi lama",
-    address: "Pokhara",
-    age: 28,
-    hobbies: "coding",
-  },
-];
-console.log(userList);
-const personalBio = ({ name, address }) => {
-  // const { name, address } = person;
-  console.log(person);
-  const str = `${name} from ${address} ,24 years old and likes to coding`;
-  return str;
-};
+// const userList = [
+//   {
+//     name: "binaya Moktan",
+//     address: "manthali",
+//     age: 25,
+//     hobbies: ["coding", "hacking"],
+//   },
+//   {
+//     name: "nawang Lama",
+//     address: "Kathmandu",
+//     age: 22,
+//     hobbies: ["coding", "networking"],
+//   },
+//   {
+//     name: "tashi lama",
+//     address: "Pokhara",
+//     age: 28,
+//     hobbies: "coding",
+//   },
+// ];
+// console.log(userList);
+// const personalBio = ({ name, address }) => {
+// const { name, address } = person;
+// console.log(person);
+// const str = `${name} from ${address} ,24 years old and likes to coding`;
+// return str;
+// };
 
 // const data = personBio();
 // console.log(userList);
 
-userList.forEach((item) => {
-  console.log(personalBio(item));
-});
+// userList.forEach((item) => {
+//   console.log(personalBio(item));
+// });
 
 // const num1 = [1, 2, 3, 4, 5];
 // const num2 = [9, 10];
 // const combined = [...num1, ...num2];
 
 // console.log(combined);
-const num1 = [1, 2, 3, 4, 5];
-const num2 = [9, 10];
+// const num1 = [1, 2, 3, 4, 5];
+// const num2 = [9, 10];
+
+//JS error handling
+// try {
+//   console.log(x);
+//your code here
+// } catch (error) {
+// console.log(error);
+// console.log("this is error handling block");
+//send notification to user or engineer team
+// } finally {
+//   console.log("this block will always run");
+// }
+
+// console.log("this work");
+
+try {
+  throw new Error("hacked");
+} catch (error) {
+  console.log(error.message);
+
+  //send notification to hacker team ..
+  if (error.message === "hacked") {
+    console.log("hire hacker team");
+  }
+} finally {
+  console.log("this block will always run");
+}
+
+// in this case , throw used to error handling
