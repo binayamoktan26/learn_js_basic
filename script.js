@@ -412,24 +412,24 @@
 
 // Data type Object
 
-const person = {
-  name: "Binaya Moktan",
-  number: 123456789,
-  age: 25,
-  occupation: "Software Engineer",
-  address: "manthali",
-  isMarried: false,
-  skill: ["javascript", "react", "node", ["java", "python"]],
-  gender: null,
-  parents: {
-    f: "minato",
-    m: "kushina",
-  },
+// const person = {
+//   name: "Binaya Moktan",
+//   number: 123456789,
+//   age: 25,
+//   occupation: "Software Engineer",
+//   address: "manthali",
+//   isMarried: false,
+//   skill: ["javascript", "react", "node", ["java", "python"]],
+//   gender: null,
+//   parents: {
+//     f: "minato",
+//     m: "kushina",
+//   },
 
-  bio: () => {
-    return "hello , Here me Nawang Tashi Lama";
-  },
-};
+//   bio: () => {
+//     return "hello , Here me Nawang Tashi Lama";
+//   },
+// };
 // shallow copy of object
 // Read data
 // const data = person.skill[3][1];
@@ -652,17 +652,44 @@ set method
 
 // console.log("this work");
 
-try {
-  throw new Error("hacked");
-} catch (error) {
-  console.log(error.message);
+// try {
+//   throw new Error("hacked");
+// } catch (error) {
+//   console.log(error.message);
 
-  //send notification to hacker team ..
-  if (error.message === "hacked") {
-    console.log("hire hacker team");
-  }
-} finally {
-  console.log("this block will always run");
-}
+//send notification to hacker team ..
+//   if (error.message === "hacked") {
+//     console.log("hire hacker team");
+//   }
+// } finally {
+//   console.log("this block will always run");
+// }
 
 // in this case , throw used to error handling
+
+// JS - scheduling
+/*1. setTimeout
+
+a.clearTimeout
+2. setInterval
+a.clearInterval*/
+
+//1. setTimeout
+//clearTimeout
+// console.log("i am before setTimeOut");
+// const counter = setTimeout(() => {
+//   console.log("i am from inside setTimeOut");
+// }, 5000); //1000ms means 1 sec
+
+// clearTimeout(counter);
+
+// setInterval
+// clear interval
+// let counter = 0;
+// const countDown = setInterval(() => {
+//   console.log("sharengan", counter++);
+//   if (counter === 10) {
+//     clearInterval(countDown);
+//     console.log("you are already in my genjutsu");
+//   }
+// }, 10);
