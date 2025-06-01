@@ -674,8 +674,8 @@ a.clearTimeout
 2. setInterval
 a.clearInterval*/
 
-//1. setTimeout
-//clearTimeout
+// 1. setTimeout
+// clearTimeout
 // console.log("i am before setTimeOut");
 // const counter = setTimeout(() => {
 //   console.log("i am from inside setTimeOut");
@@ -693,3 +693,19 @@ a.clearInterval*/
 //     console.log("you are already in my genjutsu");
 //   }
 // }, 10);
+
+//Advanced -Jaascript Concept
+
+// const yoyo = () => console.log("0.1" + (5 + 3));
+// console.log("1. log");
+// setTimeout(() => console.log("2.inside first timeout  log"), 5000);
+// console.log("3. after first setTimeout");
+// function sayHi() {
+//   console.log("4. inside sayHi function");
+//   yoyo();
+
+// setTimeout(() => {
+//   console.log("5. inside second timeout log");
+// }, 0);
+// sayHi();
+// console.log("6. last log");
