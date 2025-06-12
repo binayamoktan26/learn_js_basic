@@ -141,12 +141,12 @@
 
 //procedural PP
 
-const jonin = {
-  name: "Kakashi",
-  add: "headen leaf village",
+// const jonin = {
+//   name: "Kakashi",
+//   add: "headen leaf village",
 
-  age: "1-1-2001",
-};
+//   age: "1-1-2001",
+// };
 // function hokage(jutsu) {
 //   return `my nameis ${jutsu.name} and i live in ${
 //     jutsu.add
@@ -169,27 +169,121 @@ const jonin = {
 //4 pillars of OOP
 
 //ENCAPSULATION
-class person {
-  constructor(obj) {
-    this.name = obj.name;
-    this.add = obj.add;
-    this.age = obj.age;
-  }
-  hokage() {
-    return `my name is ${this.name} and i live in ${
-      this.add
-    } and my age is ${this.getAge(this.age)}`;
-  }
+// class person {
+//   constructor(obj) {
+//     this.name = obj.name;
+//     this.add = obj.add;
+//     this.age = obj.age;
+//   }
+//   hokage() {
+//     return `my name is ${this.name} and i live in ${
+//       this.add
+//     } and my age is ${this.getAge(this.age)}`;
+//   }
+//   getAge() {
+//     return new Date().getFullYear() - new Date(this.age).getFullYear();
+//   }
 
-  getAge() {
-    return new Date().getFullYear() - new Date(this.age).getFullYear();
-  }
+//   birthday() {
+//     return `happy birthday  ${this.name}, you are now ${
+//       this.getAge() + 1
+//     } years old!`;
+//   }
+// }
+// const kakashiInfo = new person(jonin);
+// console.log(kakashiInfo.hokage()); // Output: my nameis Kakashi and i live in headen leaf village and my age is 3
 
-  birthday() {
-    return `happy birthday  ${this.name}, you are now ${
-      this.getAge() + 1
-    } years old!`;
+//ABSTRACTION
+// class person {
+//   #age;
+//   constructor(obj) {
+//     this.name = obj.name;
+//     this.add = obj.add;
+//     this.#age = obj.age;
+//   }
+//   hokage() {
+//     return `my name is ${this.name} and i live in ${
+//       this.add
+//     } and my age is ${this.#getAge(this.#age)}`;
+//   }
+//   #getAge() {
+//     return new Date().getFullYear() - new Date(this.#age).getFullYear();
+//   }
+
+//   birthday() {
+//     return `happy birthday  ${this.name}, you are now ${
+//       this.getAge() + 1
+//     } years old!`;
+//   }
+// }
+// const kakashiInfo = new person(jonin);
+// console.log(kakashiInfo.hokage());
+// console.log(kakashiInfo.age); // Output:
+// console.log(kakashiInfo.getAge());
+
+//INHERITANCCE
+class Living {
+  constructor(name, add) {
+    this.name = name;
+    this.add = add;
   }
 }
-const kakashiInfo = new person(jonin);
-console.log(kakashiInfo.hokage()); // Output: my nameis Kakashi and i live in headen leaf village and my age is 3
+
+jonin = {
+  name: "Kakashi",
+  add: "headen leaf village",
+  carrer: "copy ninja",
+};
+
+class person extends Living {
+  constructor(obj) {
+    super(obj.name, obj.add);
+    this.carrer = obj.carrer;
+  }
+  bio() {
+    return `my name is ${this.name} and i live in ${this.add} `;
+  }
+  gatCarrer() {
+    return `their carrer is ${this.carrer}`;
+  }
+}
+
+const kazekage = {
+  name: "Gaara",
+  add: " hidden sand village",
+  carrer: "sand manupulation jutsu",
+};
+const chunin = {
+  name: "shikamaru",
+  add: "headen leaf village",
+  carrer: "shadow posesion jutsu",
+};
+const hokageInfo = new person(jonin);
+console.log(hokageInfo.bio());
+const kazekageInfo = new person(kazekage);
+console.log(kazekageInfo.carrer);
+
+const chuninInfo = new person(chunin);
+
+console.log(chuninInfo.carrer);
+const lion = {
+  name: "Lion",
+  add: "Savannah",
+  strength: "Roar",
+};
+class Animal extends Living {
+  constructor(obj) {
+    super(obj.name, obj.add);
+    this.strength = obj.strength;
+  }
+  bio() {
+    return `my name is ${this.name} and i live in ${this.add} `;
+  }
+  getStrength() {
+    return `their strength is ${this.strength}`;
+  }
+}
+
+const lionInfo = new Animal(lion);
+
+console.log(lionInfo.getStrength()); // Output: their strength is Roar
